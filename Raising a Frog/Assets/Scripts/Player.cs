@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
             {
                 click++;
             }
-            if (click >= 100)
+            if (click >= 50)
             {
                 //step을 1로 만듦
                 GameObject.Find("GameManager").GetComponent<GameManager>().step++;
@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
         }
         else
         {
+            // *       움직임 구현        *
             float xInput = Input.GetAxis("Horizontal");
             float yInput = Input.GetAxis("Vertical");
 
@@ -44,9 +45,28 @@ public class Player : MonoBehaviour
             float ySpeed = yInput * speed;
 
             Vector2 newVelocity = new Vector2(xSpeed, ySpeed);
-            //Vector3 newVelocity = new Vector3(xSpeed, 0f, zSpeed);
 
             playerRigidbody.velocity = newVelocity;
+
+            //
+            if (xInput < 0)
+            {
+                transform.localScale = new Vector2(1, 1);
+            }
+            else if (xInput > 0)
+            {
+                transform.localScale = new Vector2(-1, 1);
+            }
+
+            // *      움직이는 중인지      *
+            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+            {
+                GetComponent<Animator>().SetBool("isSwimming", true);
+            }
+            else
+            {
+                GetComponent<Animator>().SetBool("isSwimming", false);
+            }
         }
     }
 
