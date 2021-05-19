@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637570020687667492
-    m_Hash: 3617124489
+      ticks: 637570318507312242
+    m_Hash: 3748992879
   m_LockFileStatus:
     m_FilePath: D:/a_growFROG/Raising a Frog/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637570020777763500
+      ticks: 637570320831565540
     m_Hash: 3228591515
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -92,6 +92,7 @@ m_PackageAssets:
         - 5.0.2
         - 5.0.3
         - 5.0.4
+        - 5.0.5
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.1
@@ -99,7 +100,8 @@ m_PackageAssets:
         compatible:
         - 5.0.3
         - 5.0.4
-        verified: 5.0.4
+        - 5.0.5
+        verified: 5.0.5
       dependencies:
       - name: com.unity.2d.common
         version: 4.0.3
@@ -456,13 +458,15 @@ m_PackageAssets:
         - 5.0.2
         - 5.1.0
         - 5.1.1
+        - 5.1.2
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.0
         compatible:
         - 5.1.0
         - 5.1.1
-        verified: 5.1.1
+        - 5.1.2
+        verified: 5.1.2
       dependencies:
       - name: com.unity.mathematics
         version: 1.1.0

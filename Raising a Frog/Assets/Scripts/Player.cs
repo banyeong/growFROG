@@ -79,5 +79,11 @@ public class Player : MonoBehaviour
             GetComponent<Animator>().SetInteger("step", 1); //애니메이터 변수 step 1로 바꿈
             playerCollider.size = new Vector3(2.7f, 1.516f, 1f); //콜라이더 사이즈 변경
         }
+        //2단계 뒷다리가 나온 올챙이라면
+        if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 2)
+        {
+            GetComponent<Animator>().SetInteger("step", 2); //애니메이터 변수 step 1로 바꿈
+            //playerCollider.size = new Vector3(2.7f, 1.516f, 1f); //콜라이더 사이즈 변경
+        }
     }
 }
