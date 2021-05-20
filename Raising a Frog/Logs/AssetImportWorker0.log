@@ -15,11 +15,11 @@ D:/a_growFROG/Raising a Frog
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57937
+53782
 Successfully changed project path to: D:/a_growFROG/Raising a Frog
 D:/a_growFROG/Raising a Frog
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 51.36 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 35.03 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path C:/Users/soran/OneDrive/바탕 화면/Unity/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,254 +35,379 @@ Initialize mono
 Mono path[0] = 'C:/Users/soran/OneDrive/바탕 화면/Unity/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/soran/OneDrive/바탕 화면/Unity/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/soran/OneDrive/바탕 화면/Unity/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/soran/OneDrive/바탕 화면/Unity/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004758 seconds.
+Registered in 0.004014 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 72.49 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 34.22 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.908 seconds
+- Completed reload, in  2.497 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001022 seconds.
+Registered in 0.001155 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 53.29 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 46.56 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.244 seconds
+- Completed reload, in  1.052 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 86.9 MB.
 System memory in use after: 86.9 MB.
 
 Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2236.
-Total: 2.873700 ms (FindLiveObjects: 0.222000 ms CreateObjectMapping: 0.074000 ms MarkObjects: 2.459500 ms  DeleteObjects: 0.116800 ms)
+Total: 2.005300 ms (FindLiveObjects: 0.179500 ms CreateObjectMapping: 0.080700 ms MarkObjects: 1.631400 ms  DeleteObjects: 0.113000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Character/tadpole_3
-  artifactKey: Guid(2d40608d37188c0459a3cb16d2bd2595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3 using Guid(2d40608d37188c0459a3cb16d2bd2595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef29a34a770647646c6799623808a3e3') in 0.005911 seconds
-  Import took 0.009002 seconds .
+  path: Assets/Character
+  artifactKey: Guid(a0ea1579338453c46bc46a8ec2563298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character using Guid(a0ea1579338453c46bc46a8ec2563298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c61d5bc224cb7a6db9727175a47b78') in 0.005085 seconds
+  Import took 0.007695 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 530.309331 seconds.
-  path: Assets/Character/tadpole_3/idle
-  artifactKey: Guid(a82172f2e0221c6498645f51cb772d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle using Guid(a82172f2e0221c6498645f51cb772d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25bc1928180c161fa998feb4ae39d37') in 0.003641 seconds
-  Import took 0.007618 seconds .
+  Time since last request: 2.846266 seconds.
+  path: Assets/Character/tadpole_4
+  artifactKey: Guid(de64317bb0150d041970d374b8324909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4 using Guid(de64317bb0150d041970d374b8324909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76930d8337335a56db45247e65f7f5c7') in 0.002931 seconds
+  Import took 0.005845 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000995 seconds.
-  path: Assets/Character/tadpole_3/idle
-  artifactKey: Guid(a82172f2e0221c6498645f51cb772d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle using Guid(a82172f2e0221c6498645f51cb772d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25bc1928180c161fa998feb4ae39d37') in 0.003604 seconds
-  Import took 0.007672 seconds .
+  Time since last request: 1.996316 seconds.
+  path: Assets/Character/frogspawn
+  artifactKey: Guid(a589a970457eb7a4d8bb52a71893f467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/frogspawn using Guid(a589a970457eb7a4d8bb52a71893f467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d0792f79dc3c9e5ed90b21d4a1dc5d0') in 0.003055 seconds
+  Import took 0.005895 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.334808 seconds.
-  path: Assets/Character/tadpole_3/swimming
-  artifactKey: Guid(ce3fdd7c8e20de24db545f675389e63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming using Guid(ce3fdd7c8e20de24db545f675389e63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5850cd0379157654906eccbf78715b2b') in 0.003701 seconds
-  Import took 0.006691 seconds .
+  Time since last request: 2.561645 seconds.
+  path: Assets/Character/frogspawn_1
+  artifactKey: Guid(a589a970457eb7a4d8bb52a71893f467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/frogspawn_1 using Guid(a589a970457eb7a4d8bb52a71893f467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '143843138ca8d0429b1330dd86c0510a') in 0.002895 seconds
+  Import took 0.005818 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.987178 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0000.png
-  artifactKey: Guid(29bc0f705e7f35b47998106a3e2f769f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0000.png using Guid(29bc0f705e7f35b47998106a3e2f769f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8239774513ee3eeb3aaf498c7b352c') in 0.253388 seconds
-  Import took 0.256581 seconds .
+  Time since last request: 10.118951 seconds.
+  path: Assets/Character/tadpole_4/idle
+  artifactKey: Guid(d5f00e0dc403ac7498b10431f527b2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/idle using Guid(d5f00e0dc403ac7498b10431f527b2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f6c62196b64ad9a56448ccd437c3055') in 0.002879 seconds
+  Import took 0.005936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.591034 seconds.
+  path: Assets/Character/tadpole_4/swimming
+  artifactKey: Guid(f5c9cd232226a1d4d9ceff821566b695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/swimming using Guid(f5c9cd232226a1d4d9ceff821566b695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50cd63217a2169c9691afee6f923387a') in 0.002621 seconds
+  Import took 0.005299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.957617 seconds.
+  path: Assets/Character/tadpole_4/idle/올챙이4_기본_0000.png
+  artifactKey: Guid(0989814dbb519a042ba5905217bbbb19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/idle/올챙이4_기본_0000.png using Guid(0989814dbb519a042ba5905217bbbb19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1587d23a2024bb45c51b49f87a826008') in 0.201075 seconds
+  Import took 0.203812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Character/tadpole_4/idle/올챙이4_기본_0002.png
+  artifactKey: Guid(d926ffdbc9157bd4ba3f5439d73c68c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/idle/올챙이4_기본_0002.png using Guid(d926ffdbc9157bd4ba3f5439d73c68c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fccc709ebcb8e2d417560f54ac98c248') in 0.010903 seconds
+  Import took 0.013423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Character/tadpole_4/idle/올챙이4_기본_0006.png
+  artifactKey: Guid(f4bb0a8649a68aa43bcf011a5fc13ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/idle/올챙이4_기본_0006.png using Guid(f4bb0a8649a68aa43bcf011a5fc13ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a41cf73a618eda6d67d56b0a39f1a9') in 0.011076 seconds
+  Import took 0.013628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Character/tadpole_4/idle/올챙이4_기본_0008.png
+  artifactKey: Guid(c4522b69f455294438584fb0cb33d22f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/idle/올챙이4_기본_0008.png using Guid(c4522b69f455294438584fb0cb33d22f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '455da4fb3c039952b8abe8d1671f46d4') in 0.015639 seconds
+  Import took 0.018225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Character/tadpole_4/idle/올챙이4_기본_0001.png
+  artifactKey: Guid(26a810f1463b4714fabe09e76c704da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/idle/올챙이4_기본_0001.png using Guid(26a810f1463b4714fabe09e76c704da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da54f5f25f627081dce6d47ee9fbf7a1') in 0.010046 seconds
+  Import took 0.012609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Character/tadpole_4/idle/올챙이4_기본_0005.png
+  artifactKey: Guid(693f854553a3ddd479f6837749c90711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/idle/올챙이4_기본_0005.png using Guid(693f854553a3ddd479f6837749c90711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9736bd27c520de07156db0b07d3b866') in 0.010691 seconds
+  Import took 0.013462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Character/tadpole_4/idle/올챙이4_기본_0003.png
+  artifactKey: Guid(befa5dd360451bf4fb1395233690b64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/idle/올챙이4_기본_0003.png using Guid(befa5dd360451bf4fb1395233690b64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66578d2f14480d6847ee677eb7129b3') in 0.011787 seconds
+  Import took 0.016102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Character/tadpole_4/idle/올챙이4_기본_0004.png
+  artifactKey: Guid(3ce19b3ccf0c4d849886654c7391fcee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/idle/올챙이4_기본_0004.png using Guid(3ce19b3ccf0c4d849886654c7391fcee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af33298de506400474cafa0c1fc398e') in 0.010433 seconds
+  Import took 0.013928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Character/tadpole_4/idle/올챙이4_기본_0007.png
+  artifactKey: Guid(3c2179990bf7d864596cc2fa0af30cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/idle/올챙이4_기본_0007.png using Guid(3c2179990bf7d864596cc2fa0af30cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa27f92edcbfad2057151b36cdd677eb') in 0.013647 seconds
+  Import took 0.016370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.499551 seconds.
+  path: Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0000.png
+  artifactKey: Guid(26b6e0ba93cc0144c9e2d2d357b07d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0000.png using Guid(26b6e0ba93cc0144c9e2d2d357b07d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2dfaa92f7d9947bbf11ac7855b11a0c') in 0.011330 seconds
+  Import took 0.014094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0005.png
+  artifactKey: Guid(5a9107d65c82ca641825a657ca7645a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0005.png using Guid(5a9107d65c82ca641825a657ca7645a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8528d08e96751396758008536236728') in 0.010259 seconds
+  Import took 0.012813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0003.png
+  artifactKey: Guid(3f19333c59e4fb2448724082f4198b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0003.png using Guid(3f19333c59e4fb2448724082f4198b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bfcc6705e3cccd37ec13823ca5bfeeb') in 0.011042 seconds
+  Import took 0.013956 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000288 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0001.png
-  artifactKey: Guid(d66755414b978ce45bbb4c92068bb931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0001.png using Guid(d66755414b978ce45bbb4c92068bb931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82637921c1b754f84384089c37ea87f8') in 0.011752 seconds
-  Import took 0.014404 seconds .
+  path: Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0004.png
+  artifactKey: Guid(ffea275cd40962e42b20de17520b94ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0004.png using Guid(ffea275cd40962e42b20de17520b94ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a189cfec57d51e072092292a3c9f61f') in 0.010703 seconds
+  Import took 0.013523 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0002.png
-  artifactKey: Guid(0db15742bfa0bec4193a0c1e0d58bbe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0002.png using Guid(0db15742bfa0bec4193a0c1e0d58bbe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07426cfd09552b3a16f7c45442fdf2a3') in 0.011397 seconds
-  Import took 0.014426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0003.png
-  artifactKey: Guid(cc1a696df3aa63a4ca047a409f29be97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0003.png using Guid(cc1a696df3aa63a4ca047a409f29be97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78b728e3e2ae1cdcf71a1adfdd9def8a') in 0.010261 seconds
-  Import took 0.013113 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0007.png
-  artifactKey: Guid(d17bbd2c6fb6f7144849c5b2f729e8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0007.png using Guid(d17bbd2c6fb6f7144849c5b2f729e8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e2a4f0aa953302c1e8b6d4545ef439') in 0.010719 seconds
-  Import took 0.013444 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000346 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0006.png
-  artifactKey: Guid(6de372911d657414ba5ec8aeaa546d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0006.png using Guid(6de372911d657414ba5ec8aeaa546d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9169f15611b487cb922036bba629dcfe') in 0.011626 seconds
-  Import took 0.015410 seconds .
+  Time since last request: 0.000259 seconds.
+  path: Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0002.png
+  artifactKey: Guid(c215498c439db7648bd30141ec925463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0002.png using Guid(c215498c439db7648bd30141ec925463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b3f001df8111d8aba1ea1d35ccd115') in 0.010746 seconds
+  Import took 0.013841 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000275 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0005.png
-  artifactKey: Guid(6756242538a751b4c9ed469a724150ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0005.png using Guid(6756242538a751b4c9ed469a724150ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d3cb4ca2f79ca9566e3253d4bf6ebe1') in 0.014318 seconds
-  Import took 0.018788 seconds .
+  path: Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0001.png
+  artifactKey: Guid(bd2273a42c9a8f3428927ccfb8d77d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/tadpole_4/swimming/올챙이4_헤엄_0001.png using Guid(bd2273a42c9a8f3428927ccfb8d77d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ea0ed0fe740c6235b50243f5ca4255') in 0.014320 seconds
+  Import took 0.018505 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0008.png
-  artifactKey: Guid(81698d85800747d4dbeb91584c58e794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0008.png using Guid(81698d85800747d4dbeb91584c58e794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd513543b7d95ffb4529be6059ef9f372') in 0.025113 seconds
-  Import took 0.028481 seconds .
+  Time since last request: 48.005608 seconds.
+  path: Assets/Character/frogspawn_1/frogspawn_0000.png
+  artifactKey: Guid(c17c3e48c035ceb4aa2ed58e1c260409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/frogspawn_1/frogspawn_0000.png using Guid(c17c3e48c035ceb4aa2ed58e1c260409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc6ea5c41d7c6129a0bc2f3d2333b62') in 0.015474 seconds
+  Import took 0.018422 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0004.png
-  artifactKey: Guid(cc1fc7991e347714b8fb151d7c91958d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0004.png using Guid(cc1fc7991e347714b8fb151d7c91958d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8997f148906c77372f02d216b4949c14') in 0.014877 seconds
-  Import took 0.018384 seconds .
+  Time since last request: 0.000265 seconds.
+  path: Assets/Character/frogspawn_1/frogspawn_0001.png
+  artifactKey: Guid(cb376333abfbe8645b781cb1864bc6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/frogspawn_1/frogspawn_0001.png using Guid(cb376333abfbe8645b781cb1864bc6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de73d27a467cea70b36019ba64e54a98') in 0.075381 seconds
+  Import took 0.078224 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 27.927060 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0000.png
-  artifactKey: Guid(b9e4d20426489424aa58408a822bb5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0000.png using Guid(b9e4d20426489424aa58408a822bb5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c918b30ef9242116bfc68d4ecfd9395') in 0.012963 seconds
-  Import took 0.016688 seconds .
+  Time since last request: 0.000318 seconds.
+  path: Assets/Character/frogspawn_1/frogspawn_0004.png
+  artifactKey: Guid(0e22a578c63e8d64b8c82bacb83b1424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/frogspawn_1/frogspawn_0004.png using Guid(0e22a578c63e8d64b8c82bacb83b1424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2195e20008a0afb36a5d4ed5d6257eb') in 0.044559 seconds
+  Import took 0.047731 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0002.png
-  artifactKey: Guid(d3a7d1ef22d6b5b40ba3a11121aaf75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0002.png using Guid(d3a7d1ef22d6b5b40ba3a11121aaf75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a934c20b9610445989679d839db06ab6') in 0.012664 seconds
-  Import took 0.017250 seconds .
+  Time since last request: 0.000396 seconds.
+  path: Assets/Character/frogspawn_1/frogspawn_0002.png
+  artifactKey: Guid(7f6921ef546874048be6ecc3a2291798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/frogspawn_1/frogspawn_0002.png using Guid(7f6921ef546874048be6ecc3a2291798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c3fa9b8cbbd6bb92b686354bed6c762') in 0.047061 seconds
+  Import took 0.050390 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0001.png
-  artifactKey: Guid(8036bf752c504b54a81ba78b28da729e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0001.png using Guid(8036bf752c504b54a81ba78b28da729e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaaa3594dd4c7d81aac32fdf47abf72f') in 0.014878 seconds
-  Import took 0.019230 seconds .
+  Time since last request: 0.000285 seconds.
+  path: Assets/Character/frogspawn_1/frogspawn_0003.png
+  artifactKey: Guid(eac47668db6bd8f47a10e62fdbb25614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/frogspawn_1/frogspawn_0003.png using Guid(eac47668db6bd8f47a10e62fdbb25614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275b15338ecc04d9e7beb2ea6e70616a') in 0.037660 seconds
+  Import took 0.040329 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000375 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0003.png
-  artifactKey: Guid(ae877625597f0f644adc148cc1a2e13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0003.png using Guid(ae877625597f0f644adc148cc1a2e13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '127568af42bcc97caec657608e413770') in 0.012890 seconds
-  Import took 0.016490 seconds .
+  Time since last request: 11.632915 seconds.
+  path: Assets/Ani/올챙이4_기본_0000.controller
+  artifactKey: Guid(acafbbf0250075c49a749b380d98d397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ani/올챙이4_기본_0000.controller using Guid(acafbbf0250075c49a749b380d98d397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f67d0dbbc9588aecd1e8e40d6a84f956') in 0.011430 seconds
+  Import took 0.014976 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0005.png
-  artifactKey: Guid(9f3d05718413c3949a95afd281b571d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0005.png using Guid(9f3d05718413c3949a95afd281b571d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ff4dc30001e588a55f2266933225c7') in 0.012648 seconds
-  Import took 0.016866 seconds .
+  Time since last request: 0.849480 seconds.
+  path: Assets/Ani/올챙이4_헤엄_0000.controller
+  artifactKey: Guid(f18e48d694b686f49a423188a59877fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ani/올챙이4_헤엄_0000.controller using Guid(f18e48d694b686f49a423188a59877fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47904f6fe6d4dde8fc6f8ca5c766f71e') in 0.004137 seconds
+  Import took 0.007249 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0004.png
-  artifactKey: Guid(35705d49d01aa1e45836808054002ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0004.png using Guid(35705d49d01aa1e45836808054002ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8e576b4e984ac87e1e433575149ab8') in 0.015368 seconds
-  Import took 0.018974 seconds .
+  Time since last request: 0.000340 seconds.
+  path: Assets/Ani/올챙이4_헤엄_0000.controller
+  artifactKey: Guid(f18e48d694b686f49a423188a59877fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ani/올챙이4_헤엄_0000.controller using Guid(f18e48d694b686f49a423188a59877fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47904f6fe6d4dde8fc6f8ca5c766f71e') in 0.003230 seconds
+  Import took 0.005894 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 101.461139 seconds.
-  path: Assets/Ani/올챙이3_기본_0000.controller
-  artifactKey: Guid(5011b3ec5f5f3fe4b8f13303ed273893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ani/올챙이3_기본_0000.controller using Guid(5011b3ec5f5f3fe4b8f13303ed273893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9bc4e310f50ae3e54e57a283c206aed') in 0.015683 seconds
-  Import took 0.018612 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.463102 seconds.
-  path: Assets/Ani/올챙이3_헤엄_0000.controller
-  artifactKey: Guid(f10b549f5d1f1454593293ddf520752c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ani/올챙이3_헤엄_0000.controller using Guid(f10b549f5d1f1454593293ddf520752c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a0a6fbfd322b5b83d68c8031439d9bb') in 0.004382 seconds
-  Import took 0.008132 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.175590 seconds.
+  Time since last request: 4.159530 seconds.
   path: Assets/Ani/Player.controller
   artifactKey: Guid(bbca43ac88f9f754c825b96088ab376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ani/Player.controller using Guid(bbca43ac88f9f754c825b96088ab376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e074bfe3d016b347303ad958a71e57c5') in 0.006663 seconds
-  Import took 0.010257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001518 seconds.
-  path: Assets/Ani/Player.controller
-  artifactKey: Guid(bbca43ac88f9f754c825b96088ab376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ani/Player.controller using Guid(bbca43ac88f9f754c825b96088ab376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e074bfe3d016b347303ad958a71e57c5') in 0.004838 seconds
-  Import took 0.008065 seconds .
+Start importing Assets/Ani/Player.controller using Guid(bbca43ac88f9f754c825b96088ab376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fd6c087c1f511ca50ab817c93b49aae') in 0.005707 seconds
+  Import took 0.008490 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001273 seconds.
+Registered in 0.001697 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.202 seconds
+- Completed reload, in  1.177 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.0 MB.
+System memory in use before: 90.1 MB.
 System memory in use after: 90.0 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2245.
-Total: 2.360800 ms (FindLiveObjects: 0.184000 ms CreateObjectMapping: 0.070600 ms MarkObjects: 1.994600 ms  DeleteObjects: 0.110100 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2247.
+Total: 1.741000 ms (FindLiveObjects: 0.163700 ms CreateObjectMapping: 0.059600 ms MarkObjects: 1.431700 ms  DeleteObjects: 0.085000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001062 seconds.
+Registered in 0.002133 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.047 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.2 MB.
+System memory in use after: 90.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2250.
+Total: 2.605800 ms (FindLiveObjects: 0.179700 ms CreateObjectMapping: 0.064700 ms MarkObjects: 2.254300 ms  DeleteObjects: 0.105900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001311 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.994 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.3 MB.
+System memory in use after: 90.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2253.
+Total: 2.197600 ms (FindLiveObjects: 0.198600 ms CreateObjectMapping: 0.057200 ms MarkObjects: 1.849200 ms  DeleteObjects: 0.091300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001742 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.019 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.3 MB.
+System memory in use after: 90.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2256.
+Total: 2.022300 ms (FindLiveObjects: 0.185100 ms CreateObjectMapping: 0.072200 ms MarkObjects: 1.669200 ms  DeleteObjects: 0.094800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001161 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
@@ -291,456 +416,15 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.239 seconds
+- Completed reload, in  0.963 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.1 MB.
-System memory in use after: 90.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2248.
-Total: 2.397100 ms (FindLiveObjects: 0.167200 ms CreateObjectMapping: 0.064100 ms MarkObjects: 2.073300 ms  DeleteObjects: 0.091600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001137 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.094 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.2 MB.
-System memory in use after: 90.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2251.
-Total: 2.115000 ms (FindLiveObjects: 0.163900 ms CreateObjectMapping: 0.060000 ms MarkObjects: 1.791600 ms  DeleteObjects: 0.098600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 290.378662 seconds.
-  path: Assets/Ani/tadpole_3_swimming.anim
-  artifactKey: Guid(4304485c133c1a64cb8da56566c41572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ani/tadpole_3_swimming.anim using Guid(4304485c133c1a64cb8da56566c41572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd15e0852b1eebb1b64ae92bf8711954d') in 0.018341 seconds
-  Import took 0.021441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 130.932346 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0000.png
-  artifactKey: Guid(29bc0f705e7f35b47998106a3e2f769f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0000.png using Guid(29bc0f705e7f35b47998106a3e2f769f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad7e55c5af2a79fd024cba949a1edf6') in 0.055895 seconds
-  Import took 0.059154 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0001.png
-  artifactKey: Guid(d66755414b978ce45bbb4c92068bb931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0001.png using Guid(d66755414b978ce45bbb4c92068bb931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7911712345cd16ff1924910e36adbc') in 0.012929 seconds
-  Import took 0.016443 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0002.png
-  artifactKey: Guid(0db15742bfa0bec4193a0c1e0d58bbe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0002.png using Guid(0db15742bfa0bec4193a0c1e0d58bbe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '675f412b56b77ba2e73ffc8c45d3c7ec') in 0.016342 seconds
-  Import took 0.020141 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000400 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0003.png
-  artifactKey: Guid(cc1a696df3aa63a4ca047a409f29be97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0003.png using Guid(cc1a696df3aa63a4ca047a409f29be97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e37e3e87195033fb1edcf662014c9a') in 0.016122 seconds
-  Import took 0.019972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0007.png
-  artifactKey: Guid(d17bbd2c6fb6f7144849c5b2f729e8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0007.png using Guid(d17bbd2c6fb6f7144849c5b2f729e8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf67ff7e1f8dce0dc697fd14cac3001d') in 0.015648 seconds
-  Import took 0.019298 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0006.png
-  artifactKey: Guid(6de372911d657414ba5ec8aeaa546d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0006.png using Guid(6de372911d657414ba5ec8aeaa546d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff4706e1cba0908dfbff0cdccea5b05') in 0.015897 seconds
-  Import took 0.019778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0005.png
-  artifactKey: Guid(6756242538a751b4c9ed469a724150ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0005.png using Guid(6756242538a751b4c9ed469a724150ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f5dbdbeb195cd5a993199f670ec3a1') in 0.013239 seconds
-  Import took 0.017148 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0008.png
-  artifactKey: Guid(81698d85800747d4dbeb91584c58e794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0008.png using Guid(81698d85800747d4dbeb91584c58e794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bf648fe1d28d991b94a632ccded3aa') in 0.014004 seconds
-  Import took 0.017718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0004.png
-  artifactKey: Guid(cc1fc7991e347714b8fb151d7c91958d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0004.png using Guid(cc1fc7991e347714b8fb151d7c91958d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f436637d1de9883e8149921e924e6b') in 0.013215 seconds
-  Import took 0.017486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.423690 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0000.png
-  artifactKey: Guid(b9e4d20426489424aa58408a822bb5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0000.png using Guid(b9e4d20426489424aa58408a822bb5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc502e3b33bbfae89e375c339d9f2acb') in 0.016612 seconds
-  Import took 0.020496 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0002.png
-  artifactKey: Guid(d3a7d1ef22d6b5b40ba3a11121aaf75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0002.png using Guid(d3a7d1ef22d6b5b40ba3a11121aaf75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a3f2d653fd050f4731e1659b3ea7a2') in 0.011552 seconds
-  Import took 0.014573 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0001.png
-  artifactKey: Guid(8036bf752c504b54a81ba78b28da729e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0001.png using Guid(8036bf752c504b54a81ba78b28da729e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58a9eb621c4899cbc8dd52d6820a05c') in 0.013204 seconds
-  Import took 0.017222 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000384 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0003.png
-  artifactKey: Guid(ae877625597f0f644adc148cc1a2e13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0003.png using Guid(ae877625597f0f644adc148cc1a2e13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef47af8e269216590fd74aac613aec7b') in 0.010550 seconds
-  Import took 0.013777 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0005.png
-  artifactKey: Guid(9f3d05718413c3949a95afd281b571d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0005.png using Guid(9f3d05718413c3949a95afd281b571d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78f61101ff23ceaf2a87d50498c5832') in 0.012329 seconds
-  Import took 0.016312 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0004.png
-  artifactKey: Guid(35705d49d01aa1e45836808054002ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0004.png using Guid(35705d49d01aa1e45836808054002ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7bbc42c7b11ca5ab08325ca06b06dd8') in 0.012616 seconds
-  Import took 0.015732 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001526 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.381 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.3 MB.
-System memory in use after: 90.3 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2255.
-Total: 2.599600 ms (FindLiveObjects: 0.217100 ms CreateObjectMapping: 0.089600 ms MarkObjects: 2.175400 ms  DeleteObjects: 0.115900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 208.960646 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0000.png
-  artifactKey: Guid(b9e4d20426489424aa58408a822bb5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0000.png using Guid(b9e4d20426489424aa58408a822bb5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87507c874e27ad7fa8c60cbebd33fd9b') in 0.062503 seconds
-  Import took 0.066567 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0002.png
-  artifactKey: Guid(d3a7d1ef22d6b5b40ba3a11121aaf75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0002.png using Guid(d3a7d1ef22d6b5b40ba3a11121aaf75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d8103ca38d7471c1c00ef7e6a839869') in 0.013796 seconds
-  Import took 0.016906 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0001.png
-  artifactKey: Guid(8036bf752c504b54a81ba78b28da729e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0001.png using Guid(8036bf752c504b54a81ba78b28da729e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9680550bf9c8b9c5dd3ad44eef42e1') in 0.010071 seconds
-  Import took 0.013521 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0003.png
-  artifactKey: Guid(ae877625597f0f644adc148cc1a2e13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0003.png using Guid(ae877625597f0f644adc148cc1a2e13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dd1e1054b4baea43b759b87050887dc') in 0.013049 seconds
-  Import took 0.016670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0005.png
-  artifactKey: Guid(9f3d05718413c3949a95afd281b571d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0005.png using Guid(9f3d05718413c3949a95afd281b571d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265dea11e0e546ce10f23d6d94d5305c') in 0.010223 seconds
-  Import took 0.013502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0004.png
-  artifactKey: Guid(35705d49d01aa1e45836808054002ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/swimming/올챙이3_헤엄_0004.png using Guid(35705d49d01aa1e45836808054002ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca03d187f7518540aab4be07b0dec86') in 0.021262 seconds
-  Import took 0.025558 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002054 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.503 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 90.4 MB.
 System memory in use after: 90.4 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2259.
-Total: 2.224400 ms (FindLiveObjects: 0.207900 ms CreateObjectMapping: 0.112100 ms MarkObjects: 1.790800 ms  DeleteObjects: 0.112500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 230.074725 seconds.
-  path: Assets/Ani/tadpole_3_idle.anim
-  artifactKey: Guid(8dc2da6ba5287824c89a02cbb1e500ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ani/tadpole_3_idle.anim using Guid(8dc2da6ba5287824c89a02cbb1e500ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35da146151c6c6df0189db3c5a0cf851') in 0.014032 seconds
-  Import took 0.017628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.848745 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0000.png
-  artifactKey: Guid(29bc0f705e7f35b47998106a3e2f769f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0000.png using Guid(29bc0f705e7f35b47998106a3e2f769f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5218dc77cfc60edf715520d2d8967312') in 0.047247 seconds
-  Import took 0.050277 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0001.png
-  artifactKey: Guid(d66755414b978ce45bbb4c92068bb931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0001.png using Guid(d66755414b978ce45bbb4c92068bb931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9ff8382ea23bfe8c2515f75180cc9b4') in 0.011363 seconds
-  Import took 0.014810 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000391 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0002.png
-  artifactKey: Guid(0db15742bfa0bec4193a0c1e0d58bbe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0002.png using Guid(0db15742bfa0bec4193a0c1e0d58bbe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32824b6a2455b64bc532a040f07e559a') in 0.009972 seconds
-  Import took 0.013717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000397 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0003.png
-  artifactKey: Guid(cc1a696df3aa63a4ca047a409f29be97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0003.png using Guid(cc1a696df3aa63a4ca047a409f29be97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ae1018c2d99b5833daefad4053e45c') in 0.010194 seconds
-  Import took 0.013070 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0007.png
-  artifactKey: Guid(d17bbd2c6fb6f7144849c5b2f729e8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0007.png using Guid(d17bbd2c6fb6f7144849c5b2f729e8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6605c7f962e7634a8d7005f0a9792432') in 0.010633 seconds
-  Import took 0.014817 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000364 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0006.png
-  artifactKey: Guid(6de372911d657414ba5ec8aeaa546d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0006.png using Guid(6de372911d657414ba5ec8aeaa546d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16bd8001c7a39a3d9a33f56eaa877a55') in 0.011298 seconds
-  Import took 0.015600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0005.png
-  artifactKey: Guid(6756242538a751b4c9ed469a724150ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0005.png using Guid(6756242538a751b4c9ed469a724150ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50722c116bf9a02de9421d2a88de93bc') in 0.013333 seconds
-  Import took 0.016454 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000355 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0008.png
-  artifactKey: Guid(81698d85800747d4dbeb91584c58e794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0008.png using Guid(81698d85800747d4dbeb91584c58e794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a095a80b15f3533c2bfd13a02749dbb6') in 0.014850 seconds
-  Import took 0.018008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Character/tadpole_3/idle/올챙이3_기본_0004.png
-  artifactKey: Guid(cc1fc7991e347714b8fb151d7c91958d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/tadpole_3/idle/올챙이3_기본_0004.png using Guid(cc1fc7991e347714b8fb151d7c91958d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfeb5707cb89acb96b5c40950da0754') in 0.013723 seconds
-  Import took 0.018068 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001421 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.320 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.5 MB.
-System memory in use after: 90.5 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2263.
-Total: 2.777000 ms (FindLiveObjects: 0.298900 ms CreateObjectMapping: 0.111200 ms MarkObjects: 2.179400 ms  DeleteObjects: 0.185700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001289 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.978 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.6 MB.
-System memory in use after: 90.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2266.
-Total: 1.997300 ms (FindLiveObjects: 0.187600 ms CreateObjectMapping: 0.055500 ms MarkObjects: 1.649100 ms  DeleteObjects: 0.103700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 277.126858 seconds.
-  path: Assets/Scripts/Player.cs
-  artifactKey: Guid(1cdd288a13d33eb4bb84d24bdc0724c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player.cs using Guid(1cdd288a13d33eb4bb84d24bdc0724c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e7d72aab7b1c7d925821a814f95f67') in 0.015535 seconds
-  Import took 0.018376 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.018597 seconds.
-  path: Assets/Scripts/Player.cs
-  artifactKey: Guid(1cdd288a13d33eb4bb84d24bdc0724c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player.cs using Guid(1cdd288a13d33eb4bb84d24bdc0724c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e7d72aab7b1c7d925821a814f95f67') in 0.004112 seconds
-  Import took 0.008255 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001229 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.336 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.7 MB.
-System memory in use after: 90.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2269.
-Total: 1.794100 ms (FindLiveObjects: 0.158900 ms CreateObjectMapping: 0.060600 ms MarkObjects: 1.461600 ms  DeleteObjects: 0.112200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 100.072499 seconds.
-  path: Assets/Scripts/Player.cs
-  artifactKey: Guid(1cdd288a13d33eb4bb84d24bdc0724c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player.cs using Guid(1cdd288a13d33eb4bb84d24bdc0724c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f097063ac8097a9ed4c704dfa0209a4c') in 0.005107 seconds
-  Import took 0.007941 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001614 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.162 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.8 MB.
-System memory in use after: 90.8 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2272.
-Total: 3.088400 ms (FindLiveObjects: 0.235900 ms CreateObjectMapping: 0.093900 ms MarkObjects: 2.629000 ms  DeleteObjects: 0.127900 ms)
+Total: 2.378100 ms (FindLiveObjects: 0.311000 ms CreateObjectMapping: 0.112900 ms MarkObjects: 1.856300 ms  DeleteObjects: 0.096500 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

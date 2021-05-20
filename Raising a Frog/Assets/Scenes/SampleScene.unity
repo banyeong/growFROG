@@ -931,7 +931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCollider: {fileID: 1504213171}
-  click: 0
+  spaceBar: 0
   playerRigidbody: {fileID: 1504213170}
   speed: 8
 --- !u!50 &1504213170
