@@ -11,8 +11,10 @@ public class GameManager : MonoBehaviour
     public int inqMind; //탐구심
 
     public int step; //성장 단계
-    // 0: 개구리알 / 1: 올챙이 / 2: 올챙이 뒷다리 / 3: 올챙이 앞다리
-    // 4: 꼬리짧아짐
+                     // 0: 개구리알 / 1: 올챙이 / 2: 올챙이 뒷다리 / 3: 올챙이 앞다리
+                     // 4: 꼬리짧아짐
+
+    public int feedCount;
 
     void Start()
     {
@@ -22,6 +24,8 @@ public class GameManager : MonoBehaviour
         wealth = 0;
         inqMind = 0;
         step = 0;
+
+        feedCount = 0;
     }
 
     void Update()

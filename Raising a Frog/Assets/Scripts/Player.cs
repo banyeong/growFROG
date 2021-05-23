@@ -37,36 +37,42 @@ public class Player : MonoBehaviour
         }
         else
         {
-            // *       움직임 구현        *
-            float xInput = Input.GetAxis("Horizontal");
-            float yInput = Input.GetAxis("Vertical");
+            Player_Move();
+        }
+    }
 
-            float xSpeed = xInput * speed;
-            float ySpeed = yInput * speed;
+    // *     움직임 함수     *
+    void Player_Move()
+    {
+        // *       움직임 구현        *
+        float xInput = Input.GetAxis("Horizontal");
+        float yInput = Input.GetAxis("Vertical");
 
-            Vector2 newVelocity = new Vector2(xSpeed, ySpeed);
+        float xSpeed = xInput * speed;
+        float ySpeed = yInput * speed;
 
-            playerRigidbody.velocity = newVelocity;
+        Vector2 newVelocity = new Vector2(xSpeed, ySpeed);
 
-            //
-            if (xInput < 0)
-            {
-                transform.localScale = new Vector2(1, 1);
-            }
-            else if (xInput > 0)
-            {
-                transform.localScale = new Vector2(-1, 1);
-            }
+        playerRigidbody.velocity = newVelocity;
 
-            // *      헤엄치는 중인가?      *
-            if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
-            {
-                GetComponent<Animator>().SetBool("isSwimming", true);
-            }
-            else
-            {
-                GetComponent<Animator>().SetBool("isSwimming", false);
-            }
+        // *     방향 전환     *
+        if (xInput < 0)
+        {
+            transform.localScale = new Vector2(1, 1);
+        }
+        else if (xInput > 0)
+        {
+            transform.localScale = new Vector2(-1, 1);
+        }
+
+        // *      헤엄치는 중인가?      *
+        if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+        {
+            GetComponent<Animator>().SetBool("isSwimming", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("isSwimming", false);
         }
     }
 
@@ -78,20 +84,52 @@ public class Player : MonoBehaviour
         {
             GetComponent<Animator>().SetInteger("step", 1); //애니메이터 변수 step 1로 바꿈
             playerCollider.size = new Vector3(2.7f, 1.516f, 1f); //콜라이더 사이즈 변경
+
+            // *     스탯 10씩 증가     *
+            GameObject.Find("GameManager").GetComponent<GameManager>().charm += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().intell += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().wealth += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().inqMind += 10;
         }
         //3, 뒷다리가 나온 올챙이로 변경
-        if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 2)
+        else if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 2)
         {
-            GetComponent<Animator>().SetInteger("step", 2); //애니메이터 변수 step 2로 바꿈
+            GetComponent<Animator>().SetInteger("step", 2);
             speed = 10f;
-            //playerCollider.size = new Vector3(2.7f, 1.516f, 1f); //콜라이더 사이즈 변경
+            GameObject.Find("GameManager").GetComponent<GameManager>().feedCount = 0;
+
+            // *     스탯 10씩 증가     *
+            GameObject.Find("GameManager").GetComponent<GameManager>().charm += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().intell += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().wealth += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().inqMind += 10;
         }
         //4, 앞다리가 나온 올챙이로 변경
-        if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 3)
+        else if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 3)
         {
             GetComponent<Animator>().SetInteger("step", 3); //애니메이터 변수 step 3로 바꿈
             speed = 11f;
             playerCollider.size = new Vector3(3.723f, 1.646f, 1f); //콜라이더 사이즈 변경
+            GameObject.Find("GameManager").GetComponent<GameManager>().feedCount = 0;
+
+            // *     스탯 10씩 증가     *
+            GameObject.Find("GameManager").GetComponent<GameManager>().charm += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().intell += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().wealth += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().inqMind += 10;
+        }
+        //5, 꼬리 짧은 개구리로 변경
+        else if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 4)
+        {
+            GetComponent<Animator>().SetInteger("step", 4); //애니메이터 변수 step 4로 바꿈
+            playerCollider.size = new Vector3(3.402719f, 1.952039f, 1f); //콜라이더 사이즈 변경
+            GameObject.Find("GameManager").GetComponent<GameManager>().feedCount = 0;
+
+            // *     스탯 10씩 증가     *
+            GameObject.Find("GameManager").GetComponent<GameManager>().charm += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().intell += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().wealth += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().inqMind += 10;
         }
     }
 }
