@@ -18,6 +18,7 @@ public class Feed : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Space))
             {
+                GameObject.Find("Player").GetComponent<Player>().isEating = true;
                 // 먹은 먹이 개수 증가
                 GameObject.Find("GameManager").GetComponent<GameManager>().feedCount++;
                 // 즉시 삭제

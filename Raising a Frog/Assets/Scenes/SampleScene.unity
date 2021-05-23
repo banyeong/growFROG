@@ -980,6 +980,7 @@ MonoBehaviour:
   spaceBar: 0
   playerRigidbody: {fileID: 1504213170}
   speed: 8
+  isEating: 0
 --- !u!50 &1504213170
 Rigidbody2D:
   serializedVersion: 4

@@ -12,6 +12,10 @@ public class Player : MonoBehaviour
     public Rigidbody2D playerRigidbody; //플레이어 리지드바디
     public float speed = 8f;
 
+    // 먹이를 먹고 있는지, 수영하는 중인지 체크 for 애니메이션
+    public bool isEating = false;
+    private bool isSwimming = true;
+
     void Start()
     {
         playerCollider = GetComponent<BoxCollider2D>();
@@ -37,6 +41,23 @@ public class Player : MonoBehaviour
         }
         else
         {
+            // *     먹이를 섭취했을 때 애니메이션 변경
+            if (isEating == true)
+            {
+                isSwimming = false;
+                GetComponent<Animator>().SetBool("isEating", true);
+
+                if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+                {
+                    isEating = false;
+                    isSwimming = true;
+                }
+            }
+            else
+            {
+                GetComponent<Animator>().SetBool("isEating", false);
+            }
+
             Player_Move();
         }
     }
@@ -66,13 +87,16 @@ public class Player : MonoBehaviour
         }
 
         // *      헤엄치는 중인가?      *
-        if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+        if (isSwimming == true)
         {
-            GetComponent<Animator>().SetBool("isSwimming", true);
-        }
-        else
-        {
-            GetComponent<Animator>().SetBool("isSwimming", false);
+            if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+            {
+                GetComponent<Animator>().SetBool("isSwimming", true);
+            }
+            else
+            {
+                GetComponent<Animator>().SetBool("isSwimming", false);
+            }
         }
     }
 
