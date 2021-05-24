@@ -25,21 +25,23 @@ public class FeedManager : MonoBehaviour
     void Update()
     {
         // *     부화한 이후에만 먹이 생성     *
-        if (GameObject.Find("GameManager").GetComponent<GameManager>().step > 0)
+        if (GameObject.Find("GameManager").GetComponent<GameManager>().isPopUpON == false)
         {
-            timeAfterSpawn += Time.deltaTime;
-            if (timeAfterSpawn >= spawnRate)
+            if (GameObject.Find("GameManager").GetComponent<GameManager>().step > 0)
             {
-                timeAfterSpawn = 0f;
-                FeedPos();
+                timeAfterSpawn += Time.deltaTime;
+                if (timeAfterSpawn >= spawnRate)
+                {
+                    timeAfterSpawn = 0f;
+                    FeedPos();
 
-                GameObject feed = Instantiate(feedPrefab, feedPos, Quaternion.identity);
+                    GameObject feed = Instantiate(feedPrefab, feedPos, Quaternion.identity);
 
-                spawnRate = Random.Range(spawnRateMin, spawnRateMax);
+                    spawnRate = Random.Range(spawnRateMin, spawnRateMax);
+                }
             }
+            FeedCountCheck();
         }
-
-        FeedCountCheck();
     }
 
     // *     위치 선정 함수     *

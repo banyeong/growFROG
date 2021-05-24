@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     public Text stat_Text; //스탯 텍스트
     public Text step_Text; //성장 텍스트
 
+    // *     팝업이 열려있는지 상태 체크     *
+    public bool isPopUpON;
+
     void Start()
     {
         // * 게임 실행시 모든 스탯 0으로 초기화 *
@@ -31,8 +34,18 @@ public class GameManager : MonoBehaviour
         step = 0;
 
         feedCount = 0;
+        isPopUpON = false;
 
         stat_Text.text = "1단계\n개구리알";
+    }
+
+    // *    스탯이 0 밑으로 내려가지 않도록     *
+    public void Stat_MIN()
+    {
+        if (charm <= 0) charm = 0;
+        if (intell <= 0) intell = 0;
+        if (wealth <= 0) wealth = 0;
+        if (inqMind <= 0) inqMind = 0;
     }
 
     void Update()
