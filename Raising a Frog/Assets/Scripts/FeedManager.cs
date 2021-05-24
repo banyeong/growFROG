@@ -7,8 +7,8 @@ public class FeedManager : MonoBehaviour
     // *     생성할 먹이의 원본 프리팹     *
     public GameObject feedPrefab;
     // *     생성 주기      *
-    public float spawnRateMin = 1f; //최소
-    public float spawnRateMax = 2f; //최대
+    public float spawnRateMin = 0.5f; //최소
+    public float spawnRateMax = 1.0f; //최대
     private float spawnRate; //생성 주기
     private float timeAfterSpawn; // 생성 시점에서 지난 시간
     // *     생성 위치      *
@@ -63,13 +63,23 @@ public class FeedManager : MonoBehaviour
                 GameObject.Find("Player").GetComponent<Player>().Evolution();
             }
         }
-        // 앞다리 나온 올챙이거나, 꼬리 짧은 올챙이일 때
-        else if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 3
-            || GameObject.Find("GameManager").GetComponent<GameManager>().step == 4)
+        // 앞다리 나온 올챙이일 때
+        else if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 3)
         {
             if (GameObject.Find("GameManager").GetComponent<GameManager>().feedCount == 20)
             {
                 GameObject.Find("GameManager").GetComponent<GameManager>().step++;
+                GameObject.Find("Player").GetComponent<Player>().Evolution();
+            }
+        }
+        // 꼬리 짧은 개구리일 때 -> 5, 6 하나를 입력받아 정상이나 돌연변이 개구리로 바꿈
+        else if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 4)
+        {
+            if (GameObject.Find("GameManager").GetComponent<GameManager>().feedCount == 20)
+            {
+                int random = Random.Range(5, 8); // 5와 7 중에서 랜덤으로 추출
+                if (random == 7) random = 6;
+                GameObject.Find("GameManager").GetComponent<GameManager>().step = random;
                 GameObject.Find("Player").GetComponent<Player>().Evolution();
             }
         }

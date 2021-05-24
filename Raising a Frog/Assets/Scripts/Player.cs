@@ -107,7 +107,7 @@ public class Player : MonoBehaviour
         if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 1)
         {
             GetComponent<Animator>().SetInteger("step", 1); //애니메이터 변수 step 1로 바꿈
-            playerCollider.size = new Vector3(2.7f, 1.516f, 1f); //콜라이더 사이즈 변경
+            playerCollider.size = new Vector2(1.9f, 1f); //콜라이더 사이즈 변경
 
             // *     스탯 10씩 증가     *
             GameObject.Find("GameManager").GetComponent<GameManager>().charm += 10;
@@ -133,7 +133,7 @@ public class Player : MonoBehaviour
         {
             GetComponent<Animator>().SetInteger("step", 3); //애니메이터 변수 step 3로 바꿈
             speed = 11f;
-            playerCollider.size = new Vector3(3.723f, 1.646f, 1f); //콜라이더 사이즈 변경
+            playerCollider.size = new Vector2(2.2f, 1.133697f); //콜라이더 사이즈 변경
             GameObject.Find("GameManager").GetComponent<GameManager>().feedCount = 0;
 
             // *     스탯 10씩 증가     *
@@ -146,7 +146,33 @@ public class Player : MonoBehaviour
         else if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 4)
         {
             GetComponent<Animator>().SetInteger("step", 4); //애니메이터 변수 step 4로 바꿈
-            playerCollider.size = new Vector3(3.402719f, 1.952039f, 1f); //콜라이더 사이즈 변경
+            playerCollider.size = new Vector2(2.163661f, 1.344424f); //콜라이더 사이즈 변경
+            GameObject.Find("GameManager").GetComponent<GameManager>().feedCount = 0;
+
+            // *     스탯 15씩 감소     *
+            GameObject.Find("GameManager").GetComponent<GameManager>().charm += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().intell += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().wealth += 10;
+            GameObject.Find("GameManager").GetComponent<GameManager>().inqMind += 10;
+        }
+        //6-1, 돌연변이 개구리로 변경
+        else if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 5)
+        {
+            GetComponent<Animator>().SetInteger("step", 5); //애니메이터 변수 step 4로 바꿈
+            //playerCollider.size = new Vector2(2.163661f, 1.344424f); //콜라이더 사이즈 변경
+            GameObject.Find("GameManager").GetComponent<GameManager>().feedCount = 0;
+
+            // *     스탯 10씩 증가     *
+            GameObject.Find("GameManager").GetComponent<GameManager>().charm -= 15;
+            GameObject.Find("GameManager").GetComponent<GameManager>().intell -= 15;
+            GameObject.Find("GameManager").GetComponent<GameManager>().wealth -= 15;
+            GameObject.Find("GameManager").GetComponent<GameManager>().inqMind -= 15;
+        }
+        //6-2, 돌연변이 개구리로 변경
+        else if (GameObject.Find("GameManager").GetComponent<GameManager>().step == 6)
+        {
+            GetComponent<Animator>().SetInteger("step", 6); //애니메이터 변수 step 4로 바꿈
+            //playerCollider.size = new Vector2(2.163661f, 1.344424f); //콜라이더 사이즈 변경
             GameObject.Find("GameManager").GetComponent<GameManager>().feedCount = 0;
 
             // *     스탯 10씩 증가     *
