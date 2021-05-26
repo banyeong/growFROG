@@ -66,7 +66,7 @@ public class Button_event : MonoBehaviour
             GoTRAIN_BTN.SetActive(false);
             Close_BTN.SetActive(false);
 
-            MainText.text = "성장 2단계일 때 모험을 떠날 수 있어!";
+            MainText.text = "성장 2단계 이후부터 모험을 떠날 수 있어!";
             MiniText.text = "";
             OK_Text.text = "알겠어!";
         }
@@ -176,7 +176,7 @@ public class Button_event : MonoBehaviour
             Close_BTN.SetActive(false);
             Block_Button.SetActive(true);
 
-            MainText.text = "성장 3단계일 때 특훈을 할 수 있어!";
+            MainText.text = "성장 3단계 이후부터 특훈을 할 수 있어!";
             MiniText.text = "";
             OK_Text.text = "알겠어!";
         }
@@ -195,7 +195,7 @@ public class Button_event : MonoBehaviour
                 Close_BTN.SetActive(true);
                 GoADV_BTN.SetActive(false);
 
-                MainText.text = "특훈 성공 시 능력 대폭 상승!";
+                MainText.text = "특훈 성공 시 모든 능력 대폭 상승!";
                 MiniText.text = "단, 실패 시 능력 하락 ㅜ.ㅜ";
             }
             else // 0 이상이라면 실행 X
@@ -218,7 +218,7 @@ public class Button_event : MonoBehaviour
         OK_BTN.SetActive(true);
 
         isTRAIN = true;
-        random_Num = Random.Range(0, 3);
+        random_Num = Random.Range(0, 2);
 
         OK_Text.text = "확인";
         MiniText.text = "";
@@ -252,5 +252,15 @@ public class Button_event : MonoBehaviour
         Block_Button.SetActive(false);
         PopUp_StatUp.SetActive(false);
         OK_BTN.SetActive(false);
+    }
+
+    // *    게임 종료    *
+    public void Exit_Game()
+    {
+#if UNITY_EDITOR //에디터일때
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
     }
 }
