@@ -39,13 +39,10 @@ public class GameManager : MonoBehaviour
         stat_Text.text = "1단계\n개구리알";
     }
 
-    // *    스탯이 0 밑으로 내려가지 않도록     *
-    public void Stat_MIN()
+    private void Awake()
     {
-        if (charm <= 0) charm = 0;
-        if (intell <= 0) intell = 0;
-        if (wealth <= 0) wealth = 0;
-        if (inqMind <= 0) inqMind = 0;
+        // 게임 매니저는 파괴되면 X
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update()
@@ -53,5 +50,14 @@ public class GameManager : MonoBehaviour
         // *     스탯 수치 텍스트 변경     *
         stat_Text.text = "매력 " + charm + "\n\n" + "지능 " + intell + "\n\n" + "재력 " + wealth
                         + "\n\n" + "탐구심 " + inqMind;
+    }
+
+    // *    스탯이 0 밑으로 내려가지 않도록     *
+    public void Stat_MIN()
+    {
+        if (charm <= 0) charm = 0;
+        if (intell <= 0) intell = 0;
+        if (wealth <= 0) wealth = 0;
+        if (inqMind <= 0) inqMind = 0;
     }
 }
