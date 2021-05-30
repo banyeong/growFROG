@@ -41,7 +41,9 @@ public class EndManager : MonoBehaviour
             StopCoroutine(coroutine);
             text_obj.SetActive(false);
             BTN.SetActive(true);
+
             show_EndingCard();
+            init_stat();
         }
     }
     
@@ -112,5 +114,19 @@ public class EndManager : MonoBehaviour
         else if (endNum == 5) explorer_5.SetActive(true);
         else if (endNum == 6) money_6.SetActive(true);
         else if (endNum == 7) idol_7.SetActive(true);
+    }
+
+    // 게임 매니저에 있는 모든 변수 0으로 초기화
+    void init_stat()
+    {
+        GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        gameManager.step = 0;
+        gameManager.feedCount = 0;
+
+        gameManager.charm = 0;
+        gameManager.intell = 0;
+        gameManager.inqMind = 0;
+        gameManager.wealth = 0;
     }
 }

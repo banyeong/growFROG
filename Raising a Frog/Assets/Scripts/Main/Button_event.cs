@@ -289,8 +289,43 @@ public class Button_event : MonoBehaviour
 #endif
     }
 
+    // *    타이틀로     *
     public void Go_Title()
     {
         SceneManager.LoadScene("Title");
+    }
+
+    // *    메인화면으로     *
+    public void Go_Main()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
+    // *    저장하기     *
+    public void Save()
+    {
+        GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        PlayerPrefs.SetInt("charm", gameManager.charm);
+        PlayerPrefs.SetInt("intell", gameManager.intell);
+        PlayerPrefs.SetInt("inqMind", gameManager.inqMind);
+        PlayerPrefs.SetInt("wealth", gameManager.wealth);
+        PlayerPrefs.SetInt("step", gameManager.step);
+        PlayerPrefs.SetInt("feedCount", gameManager.feedCount);
+        PlayerPrefs.SetInt("ani_step", GameObject.Find("Player").GetComponent<Player>().GetComponent<Animator>().GetInteger("step"));
+    }
+
+    public void Load()
+    {
+        GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        gameManager.charm = PlayerPrefs.GetInt("charm");
+        gameManager.intell = PlayerPrefs.GetInt("intell");
+        gameManager.inqMind = PlayerPrefs.GetInt("inqMind");
+        gameManager.wealth = PlayerPrefs.GetInt("wealth");
+        gameManager.step = PlayerPrefs.GetInt("step");
+        gameManager.feedCount = PlayerPrefs.GetInt("feedCount");
+
+        SceneManager.LoadScene("Main");
     }
 }

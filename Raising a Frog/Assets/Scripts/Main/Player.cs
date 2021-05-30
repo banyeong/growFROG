@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        GetComponent<Animator>().SetInteger("step", PlayerPrefs.GetInt("ani_step"));
+        Evolution();
         playerCollider = GetComponent<BoxCollider2D>();
         playerRigidbody = GetComponent<Rigidbody2D>();
         spaceBar = 0;
@@ -108,18 +110,23 @@ public class Player : MonoBehaviour
             }
         }
     }
+    // * 불러오기 후 애니메이터의 변수 변경을 위해 *
+    public void animation_check()
+    {
 
+    }
     // *     개구리 진화     *
     public void Evolution()
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        FeedManager feedManager = GameObject.Find("FeedManager").GetComponent<FeedManager>();
 
         //2, 막 부화한 올챙이로 변경
         if (gameManager.step == 1)
         {
             GetComponent<Animator>().SetInteger("step", 1); //애니메이터 변수 step 1로 바꿈
             playerCollider.size = new Vector2(1.9f, 1f); //콜라이더 사이즈 변경
-            gameManager.step_Text.text = "2단계\n올챙이";
+            feedManager.step_Text.text = "2단계\n올챙이";
 
             // *     스탯 10씩 증가     *
             gameManager.charm += 10;
@@ -133,7 +140,7 @@ public class Player : MonoBehaviour
             GetComponent<Animator>().SetInteger("step", 2);
             speed = 10f;
             gameManager.feedCount = 0;
-            gameManager.step_Text.text = "3단계\n올챙이";
+            feedManager.step_Text.text = "3단계\n올챙이";
 
             // *     스탯 10씩 증가     *
             gameManager.charm += 10;
@@ -148,7 +155,7 @@ public class Player : MonoBehaviour
             speed = 11f;
             playerCollider.size = new Vector2(2.2f, 1.133697f); //콜라이더 사이즈 변경
             gameManager.feedCount = 0;
-            gameManager.step_Text.text = "4단계\n올챙이";
+            feedManager.step_Text.text = "4단계\n올챙이";
 
             // *     스탯 10씩 증가     *
             gameManager.charm += 10;
@@ -162,7 +169,7 @@ public class Player : MonoBehaviour
             GetComponent<Animator>().SetInteger("step", 4); //애니메이터 변수 step 4로 바꿈
             playerCollider.size = new Vector2(2.163661f, 1.344424f); //콜라이더 사이즈 변경
             gameManager.feedCount = 0;
-            gameManager.step_Text.text = "5단계\n개구리";
+            feedManager.step_Text.text = "5단계\n개구리";
 
             // *     스탯 15씩 감소     *
             gameManager.charm += 10;
@@ -175,7 +182,7 @@ public class Player : MonoBehaviour
         {
             GetComponent<Animator>().SetInteger("step", 5); //애니메이터 변수 step 5로 바꿈
             gameManager.feedCount = 0;
-            gameManager.step_Text.text = "돌연변이\n개구리";
+            feedManager.step_Text.text = "돌연변이\n개구리";
 
             // *     스탯 10씩 증가     *
             gameManager.charm -= 15;
@@ -190,7 +197,7 @@ public class Player : MonoBehaviour
         {
             GetComponent<Animator>().SetInteger("step", 6); //애니메이터 변수 step 6로 바꿈
             gameManager.feedCount = 0;
-            gameManager.step_Text.text = "개구리";
+            feedManager.step_Text.text = "개구리";
 
             // *     스탯 10씩 증가     *
             gameManager.charm += 10;

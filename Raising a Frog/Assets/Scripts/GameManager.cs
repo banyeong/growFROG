@@ -17,10 +17,6 @@ public class GameManager : MonoBehaviour
 
     public int feedCount;
 
-    // *     텍스트     *
-    public Text stat_Text; //스탯 텍스트
-    public Text step_Text; //성장 텍스트
-
     // *     팝업이 열려있는지 상태 체크     *
     public bool isPopUpON;
 
@@ -35,8 +31,6 @@ public class GameManager : MonoBehaviour
 
         feedCount = 0;
         isPopUpON = false;
-
-        stat_Text.text = "1단계\n개구리알";
     }
 
     private void Awake()
@@ -47,9 +41,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        // *     스탯 수치 텍스트 변경     *
-        stat_Text.text = "매력 " + charm + "\n\n" + "지능 " + intell + "\n\n" + "재력 " + wealth
-                        + "\n\n" + "탐구심 " + inqMind;
+
     }
 
     // *    스탯이 0 밑으로 내려가지 않도록     *

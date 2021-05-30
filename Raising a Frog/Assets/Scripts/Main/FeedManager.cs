@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class FeedManager : MonoBehaviour
@@ -16,15 +17,23 @@ public class FeedManager : MonoBehaviour
     private float posMin = -3.0f;
     private float posMax = 3.0f;
     Vector3 feedPos;
+    // *     텍스트     *
+    public Text stat_Text; //스탯 텍스트
+    public Text step_Text; //성장 텍스트
 
     void Start()
     {
+        stat_Text.text = "1단계\n개구리알";
         timeAfterSpawn = 0f;
         spawnRate = Random.Range(spawnRateMin, spawnRateMax);
     }
 
     void Update()
     {
+        // *     스탯 수치 텍스트 변경     *
+        stat_Text.text = "매력 " + GameObject.Find("GameManager").GetComponent<GameManager>().charm + "\n\n" + "지능 " + GameObject.Find("GameManager").GetComponent<GameManager>().intell
+            + "\n\n" + "재력 " + GameObject.Find("GameManager").GetComponent<GameManager>().wealth + "\n\n" + "탐구심 " + GameObject.Find("GameManager").GetComponent<GameManager>().inqMind;
+
         // *     부화한 이후에만 먹이 생성     *
         if (GameObject.Find("GameManager").GetComponent<GameManager>().isPopUpON == false)
         {
