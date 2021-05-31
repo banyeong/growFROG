@@ -19,6 +19,13 @@ public class GameManager : MonoBehaviour
 
     // *     팝업이 열려있는지 상태 체크     *
     public bool isPopUpON;
+    
+    // * 스페이스바 안내창 *
+    public float space_time = 0f;
+    public bool spaceON = false;
+
+    // 로드를 햇다면 true
+    public bool is_Load = false;
 
     void Start()
     {

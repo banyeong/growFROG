@@ -16,13 +16,29 @@ public class Player : MonoBehaviour
     public bool isEating = false;
     private bool isSwimming = true;
 
+    // 오디오 소스
+    bool isAudio = false;
+    public AudioClip audioEat;
+    public AudioClip audioEvolution;
+    AudioSource audioSource;
+
     void Start()
     {
-        GetComponent<Animator>().SetInteger("step", PlayerPrefs.GetInt("ani_step"));
+        GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        if (gameManager.is_Load == true)
+        {
+            gameManager.is_Load = false;
+            GetComponent<Animator>().SetInteger("step", PlayerPrefs.GetInt("ani_step"));
+        }
         Evolution();
         playerCollider = GetComponent<BoxCollider2D>();
         playerRigidbody = GetComponent<Rigidbody2D>();
         spaceBar = 0;
+    }
+
+    private void Awake()
+    {
+        this.audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -41,7 +57,7 @@ public class Player : MonoBehaviour
                 Evolution();
             }
         }
-        else
+        else if (GameObject.Find("GameManager").GetComponent<GameManager>().step > 0)
         {
             // *     먹이를 섭취했을 때 애니메이션 변경
             if (isEating == true)
@@ -110,16 +126,17 @@ public class Player : MonoBehaviour
             }
         }
     }
-    // * 불러오기 후 애니메이터의 변수 변경을 위해 *
-    public void animation_check()
-    {
-
-    }
     // *     개구리 진화     *
     public void Evolution()
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         FeedManager feedManager = GameObject.Find("FeedManager").GetComponent<FeedManager>();
+
+        if (isAudio == false)
+        {
+            isAudio = true;
+        }
+        else PlaySound("EVOLUTION");
 
         //2, 막 부화한 올챙이로 변경
         if (gameManager.step == 1)
@@ -205,5 +222,29 @@ public class Player : MonoBehaviour
             gameManager.wealth += 10;
             gameManager.inqMind += 10;
         }
+    }
+
+    // *     사운드 제어     *
+    public void PlaySound(string action)
+    {
+        switch (action)
+        {
+            case "EAT":
+                audioSource.clip = audioEat;
+                break;
+            case "EVOLUTION":
+                audioSource.clip = audioEvolution;
+                break;
+            case "BTN":
+                audioSource.clip = GameObject.Find("ButtonManager").GetComponent<Button_event>().audioBTN;
+                break;
+            case "SUCCESS":
+                audioSource.clip = GameObject.Find("ButtonManager").GetComponent<Button_event>().audioSuccess;
+                break;
+            case "FAILURE":
+                audioSource.clip = GameObject.Find("ButtonManager").GetComponent<Button_event>().audioFailure;
+                break;
+        }
+        audioSource.Play();
     }
 }

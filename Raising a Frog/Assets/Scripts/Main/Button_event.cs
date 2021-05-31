@@ -15,9 +15,18 @@ public class Button_event : MonoBehaviour
     public GameObject OK_BTN;
     public GameObject Block_Button; // 팝업창 실행 시 다른 버튼 클릭을 막기 위해
 
+    public GameObject SpaceBar_PopUp; //스페이스바를 연타해주세요!안내창
+
     public Text MainText;
     public Text MiniText;
     public Text OK_Text;
+    // --------------------------------
+
+    public AudioClip audioBTN;
+    public AudioClip audioSuccess;
+    public AudioClip audioFailure;
+    AudioSource audioSource;
+
     // --------------------------------
 
     private bool isAVT = false;
@@ -27,26 +36,51 @@ public class Button_event : MonoBehaviour
 
     private int random_Num;
 
+    private void Start()
+    {
+        if (GameObject.Find("GameManager").GetComponent<GameManager>().step > 0)
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().spaceON = true;
+        }
+    }
+
     private void Update()
     {
-        // *     모험을 시작했는가?     *
-        if (isAVT == true)
+        if (GameObject.Find("GameManager").GetComponent<GameManager>().spaceON == false)
         {
-            avt_time += Time.deltaTime;
-            if (avt_time >= 7)
+            SpaceBar_PopUp.SetActive(true);
+            Block_Button.SetActive(true);
+
+            GameObject.Find("GameManager").GetComponent<GameManager>().space_time += Time.deltaTime;
+
+            if (GameObject.Find("GameManager").GetComponent<GameManager>().space_time >= 2f)
             {
-                avt_time = 0;
-                isAVT = false;
+                SpaceBar_PopUp.SetActive(false);
+                GameObject.Find("GameManager").GetComponent<GameManager>().spaceON = true;
+                Block_Button.SetActive(false);
             }
         }
-        // *     특훈을 시작했는가?     *
-        if (isTRAIN == true)
+        else
         {
-            train_time += Time.deltaTime;
-            if (train_time >= 10)
+            // *     모험을 시작했는가?     *
+            if (isAVT == true)
             {
-                train_time = 0;
-                isTRAIN = false;
+                avt_time += Time.deltaTime;
+                if (avt_time >= 7)
+                {
+                    avt_time = 0;
+                    isAVT = false;
+                }
+            }
+            // *     특훈을 시작했는가?     *
+            if (isTRAIN == true)
+            {
+                train_time += Time.deltaTime;
+                if (train_time >= 10)
+                {
+                    train_time = 0;
+                    isTRAIN = false;
+                }
             }
         }
     }
@@ -55,6 +89,7 @@ public class Button_event : MonoBehaviour
     public void Adventure_Click()
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        GameObject.Find("Player").GetComponent<Player>().PlaySound("BTN");
         // 개구리알이라면 기능 X
         if (gameManager.step == 0)
         {
@@ -103,6 +138,7 @@ public class Button_event : MonoBehaviour
     public void Go_Adventure()
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        Player player = GameObject.Find("Player").GetComponent<Player>();
 
         GoADV_BTN.SetActive(false);
         Close_BTN.SetActive(false);
@@ -117,6 +153,7 @@ public class Button_event : MonoBehaviour
         // 모험 실패 0
         if (random_Num == 0)
         {
+            player.PlaySound("FAILURE");
             MainText.text = "모험 실패... 모든 능력 15 감소 ㅜㅁㅜ";
 
             gameManager.charm -= 15;
@@ -129,6 +166,7 @@ public class Button_event : MonoBehaviour
         // 모험 대성공
         else if (random_Num == 9)
         {
+            player.PlaySound("SUCCESS");
             MainText.text = "모험 대성공! 모든 능력 20 증가!!";
 
             gameManager.charm += 20;
@@ -141,44 +179,52 @@ public class Button_event : MonoBehaviour
         {
             if (random_Num == 1)
             {
+                player.PlaySound("SUCCESS");
                 MainText.text = "모험 성공! 매력 20 증가!";
                 gameManager.charm += 20;
             }
             else if (random_Num == 2)
             {
+                player.PlaySound("FAILURE");
                 MainText.text = "모험 실패! 매력 15 감소...";
                 gameManager.charm -= 15;
                 gameManager.Stat_MIN();
             }
             else if (random_Num == 3)
             {
+                player.PlaySound("SUCCESS");
                 MainText.text = "모험 성공! 지능 20 증가!";
                 gameManager.intell += 20;
             }
             else if (random_Num == 4)
             {
+                player.PlaySound("FAILURE");
                 MainText.text = "모험 실패! 지능 15 감소...";
                 gameManager.intell -= 15;
                 gameManager.Stat_MIN();
             }
             else if (random_Num == 5)
             {
+                player.PlaySound("SUCCESS");
                 MainText.text = "모험 성공! 재력 20 증가!";
                 gameManager.wealth += 20;
             }
-            else if (random_Num == 4)
+            else if (random_Num == 6)
             {
+                player.PlaySound("FAILURE");
                 MainText.text = "모험 실패! 재력 15 감소...";
                 gameManager.wealth -= 15;
                 gameManager.Stat_MIN();
             }
             else if (random_Num == 7)
             {
+                player.PlaySound("SUCCESS");
                 MainText.text = "모험 성공! 탐구심 20 증가!";
                 gameManager.inqMind += 20;
             }
             else if (random_Num == 8)
             {
+                player.PlaySound("FAILURE");
                 MainText.text = "모험 실패! 탐구심 15 감소...";
                 gameManager.inqMind -= 15;
                 gameManager.Stat_MIN();
@@ -189,6 +235,7 @@ public class Button_event : MonoBehaviour
     public void Training_Click()
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        GameObject.Find("Player").GetComponent<Player>().PlaySound("BTN");
 
         if (gameManager.step < 2)
         {
@@ -237,6 +284,7 @@ public class Button_event : MonoBehaviour
     public void Go_TRAINING()
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        Player player = GameObject.Find("Player").GetComponent<Player>();
 
         GoTRAIN_BTN.SetActive(false);
         Close_BTN.SetActive(false);
@@ -251,6 +299,7 @@ public class Button_event : MonoBehaviour
         // 특훈 실패
         if (random_Num == 0)
         {
+            player.PlaySound("FAILURE");
             MainText.text = "특훈 실패... 모든 능력 25 감소 ㅜㅁㅜ";
 
             gameManager.charm -= 25;
@@ -260,6 +309,7 @@ public class Button_event : MonoBehaviour
         }
         else // 특훈 성공
         {
+            player.PlaySound("SUCCESS");
             MainText.text = "특훈 성공! 모든 능력 40 증가!";
 
             gameManager.charm += 40;
@@ -273,6 +323,7 @@ public class Button_event : MonoBehaviour
     public void Close_PopUp()
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        GameObject.Find("Player").GetComponent<Player>().PlaySound("BTN");
         gameManager.isPopUpON = false;
         Block_Button.SetActive(false);
         PopUp_StatUp.SetActive(false);
@@ -282,6 +333,7 @@ public class Button_event : MonoBehaviour
     // *    게임 종료    *
     public void Exit_Game()
     {
+        GameObject.Find("Player").GetComponent<Player>().PlaySound("BTN");
 #if UNITY_EDITOR //에디터일때
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -289,21 +341,10 @@ public class Button_event : MonoBehaviour
 #endif
     }
 
-    // *    타이틀로     *
-    public void Go_Title()
-    {
-        SceneManager.LoadScene("Title");
-    }
-
-    // *    메인화면으로     *
-    public void Go_Main()
-    {
-        SceneManager.LoadScene("Main");
-    }
-
     // *    저장하기     *
     public void Save()
     {
+        GameObject.Find("Player").GetComponent<Player>().PlaySound("BTN");
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         PlayerPrefs.SetInt("charm", gameManager.charm);
@@ -313,19 +354,5 @@ public class Button_event : MonoBehaviour
         PlayerPrefs.SetInt("step", gameManager.step);
         PlayerPrefs.SetInt("feedCount", gameManager.feedCount);
         PlayerPrefs.SetInt("ani_step", GameObject.Find("Player").GetComponent<Player>().GetComponent<Animator>().GetInteger("step"));
-    }
-
-    public void Load()
-    {
-        GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-
-        gameManager.charm = PlayerPrefs.GetInt("charm");
-        gameManager.intell = PlayerPrefs.GetInt("intell");
-        gameManager.inqMind = PlayerPrefs.GetInt("inqMind");
-        gameManager.wealth = PlayerPrefs.GetInt("wealth");
-        gameManager.step = PlayerPrefs.GetInt("step");
-        gameManager.feedCount = PlayerPrefs.GetInt("feedCount");
-
-        SceneManager.LoadScene("Main");
     }
 }

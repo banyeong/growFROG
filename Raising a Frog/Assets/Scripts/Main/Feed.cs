@@ -21,6 +21,7 @@ public class Feed : MonoBehaviour
                 GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
                 GameObject.Find("Player").GetComponent<Player>().isEating = true;
+                GameObject.Find("Player").GetComponent<Player>().PlaySound("EAT");
                 // ∏‘¿∫ ∏‘¿Ã ∞≥ºˆ ¡ı∞°
                 gameManager.feedCount++;
                 // Ω∫≈» ¡ı∞°
