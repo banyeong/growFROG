@@ -18,8 +18,10 @@ public class Player : MonoBehaviour
 
     // 오디오 소스
     bool isAudio = false;
-    public AudioClip audioEat;
+
     public AudioClip audioEvolution;
+    public AudioClip audioSpaceBar;
+    public AudioClip audioSwimming;
     AudioSource audioSource;
 
     void Start()
@@ -48,6 +50,7 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space)) //스페이스바
             {
+                PlaySound("SPACEBAR");
                 spaceBar++;
             }
             if (spaceBar >= 50)
@@ -119,6 +122,8 @@ public class Player : MonoBehaviour
             if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
             {
                 GetComponent<Animator>().SetBool("isSwimming", true);
+                if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
+                    PlaySound("SWIMMING");
             }
             else
             {
@@ -146,10 +151,13 @@ public class Player : MonoBehaviour
             feedManager.step_Text.text = "2단계\n올챙이";
 
             // *     스탯 10씩 증가     *
-            gameManager.charm += 10;
-            gameManager.intell += 10;
-            gameManager.wealth += 10;
-            gameManager.inqMind += 10;
+            if (gameManager.blockStat == false)
+            {
+                gameManager.charm += 10;
+                gameManager.intell += 10;
+                gameManager.wealth += 10;
+                gameManager.inqMind += 10;
+            }
         }
         //3, 뒷다리가 나온 올챙이로 변경
         else if (gameManager.step == 2)
@@ -160,10 +168,13 @@ public class Player : MonoBehaviour
             feedManager.step_Text.text = "3단계\n올챙이";
 
             // *     스탯 10씩 증가     *
-            gameManager.charm += 10;
-            gameManager.intell += 10;
-            gameManager.wealth += 10;
-            gameManager.inqMind += 10;
+            if (gameManager.blockStat == false)
+            {
+                gameManager.charm += 10;
+                gameManager.intell += 10;
+                gameManager.wealth += 10;
+                gameManager.inqMind += 10;
+            }
         }
         //4, 앞다리가 나온 올챙이로 변경
         else if (gameManager.step == 3)
@@ -175,10 +186,13 @@ public class Player : MonoBehaviour
             feedManager.step_Text.text = "4단계\n올챙이";
 
             // *     스탯 10씩 증가     *
-            gameManager.charm += 10;
-            gameManager.intell += 10;
-            gameManager.wealth += 10;
-            gameManager.inqMind += 10;
+            if (gameManager.blockStat == false)
+            {
+                gameManager.charm += 10;
+                gameManager.intell += 10;
+                gameManager.wealth += 10;
+                gameManager.inqMind += 10;
+            }
         }
         //5, 꼬리 짧은 개구리로 변경
         else if (gameManager.step == 4)
@@ -188,25 +202,31 @@ public class Player : MonoBehaviour
             gameManager.feedCount = 0;
             feedManager.step_Text.text = "5단계\n개구리";
 
-            // *     스탯 15씩 감소     *
-            gameManager.charm += 10;
-            gameManager.intell += 10;
-            gameManager.wealth += 10;
-            gameManager.inqMind += 10;
+            // *     스탯 10씩 증가     *
+            if (gameManager.blockStat == false)
+            {
+                gameManager.charm += 10;
+                gameManager.intell += 10;
+                gameManager.wealth += 10;
+                gameManager.inqMind += 10;
+            }
         }
         //6-1, 돌연변이 개구리로 변경
         else if (gameManager.step == 5)
         {
             GetComponent<Animator>().SetInteger("step", 5); //애니메이터 변수 step 5로 바꿈
+            speed = 5f;
             gameManager.feedCount = 0;
             feedManager.step_Text.text = "돌연변이\n개구리";
 
-            // *     스탯 10씩 증가     *
-            gameManager.charm -= 15;
-            gameManager.intell -= 15;
-            gameManager.wealth -= 15;
-            gameManager.inqMind -= 15;
-
+            // *     스탯 15씩 감소     *
+            if (gameManager.blockStat == false)
+            {
+                gameManager.charm -= 15;
+                gameManager.intell -= 15;
+                gameManager.wealth -= 15;
+                gameManager.inqMind -= 15;
+            }
             gameManager.Stat_MIN();
         }
         //6-2, 정상 개구리로 변경
@@ -217,20 +237,26 @@ public class Player : MonoBehaviour
             feedManager.step_Text.text = "개구리";
 
             // *     스탯 10씩 증가     *
-            gameManager.charm += 10;
-            gameManager.intell += 10;
-            gameManager.wealth += 10;
-            gameManager.inqMind += 10;
+            if (gameManager.blockStat == false)
+            {
+                gameManager.charm += 10;
+                gameManager.intell += 10;
+                gameManager.wealth += 10;
+                gameManager.inqMind += 10;
+            }
         }
     }
 
-    // *     사운드 제어     *
+    // *     플레이어 사운드 제어     *
     public void PlaySound(string action)
     {
         switch (action)
         {
-            case "EAT":
-                audioSource.clip = audioEat;
+            case "SPACEBAR":
+                audioSource.clip = audioSpaceBar;
+                break;
+            case "SWIMMING":
+                audioSource.clip = audioSwimming;
                 break;
             case "EVOLUTION":
                 audioSource.clip = audioEvolution;
@@ -238,13 +264,9 @@ public class Player : MonoBehaviour
             case "BTN":
                 audioSource.clip = GameObject.Find("ButtonManager").GetComponent<Button_event>().audioBTN;
                 break;
-            case "SUCCESS":
-                audioSource.clip = GameObject.Find("ButtonManager").GetComponent<Button_event>().audioSuccess;
-                break;
-            case "FAILURE":
-                audioSource.clip = GameObject.Find("ButtonManager").GetComponent<Button_event>().audioFailure;
-                break;
         }
         audioSource.Play();
     }
+
+
 }

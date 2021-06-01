@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 public class Title_BTN : MonoBehaviour
 {
     // *    메인화면으로     *
-    public void Go_Main()
+    public void Go_Prologue()
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         GetComponent<AudioSource>().Play();
-
-        SceneManager.LoadScene("Main");
+        
+        SceneManager.LoadScene("Prologue");
         gameManager.spaceON = false;
         gameManager.space_time = 0f;
     }
@@ -31,6 +31,7 @@ public class Title_BTN : MonoBehaviour
         gameManager.feedCount = PlayerPrefs.GetInt("feedCount");
 
         gameManager.is_Load = true;
+        gameManager.blockStat = true;
 
         SceneManager.LoadScene("Main");
     }

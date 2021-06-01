@@ -1237,7 +1237,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1233034237}
         m_TargetAssemblyTypeName: Title_BTN, Assembly-CSharp
-        m_MethodName: Go_Main
+        m_MethodName: Go_Prologue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

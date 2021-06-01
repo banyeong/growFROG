@@ -21,8 +21,14 @@ public class FeedManager : MonoBehaviour
     public Text stat_Text; //스탯 텍스트
     public Text step_Text; //성장 텍스트
 
+    public GameObject Final_Evolution;
+    bool isFinal;
+    float nextSceneTime = 0f;
+    public AudioClip final;
+
     void Start()
     {
+        isFinal = false;
         stat_Text.text = "1단계\n개구리알";
         timeAfterSpawn = 0f;
         spawnRate = Random.Range(spawnRateMin, spawnRateMax);
@@ -100,7 +106,16 @@ public class FeedManager : MonoBehaviour
         {
             if (gameManager.feedCount == 25)
             {
-                SceneManager.LoadScene("Ending");
+                Final_Evolution.SetActive(true);
+                nextSceneTime += Time.deltaTime;
+                GameObject.Find("ButtonManager").GetComponent<Button_event>().Block_Button.SetActive(true);
+                if (isFinal == false)
+                {
+                    GameObject.Find("SoundManager").GetComponent<SoundManager>().ExtraSound("FINAL");
+                    isFinal = true;
+                }
+                if (nextSceneTime > 1.5f)
+                    SceneManager.LoadScene("Ending");
             }
         }
     }

@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     // 로드를 햇다면 true
     public bool is_Load = false;
+    public bool blockStat = false; //로드 시 스탯 증가를 막기 위해서
 
     void Start()
     {

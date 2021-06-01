@@ -53,7 +53,7 @@ public class Button_event : MonoBehaviour
 
             GameObject.Find("GameManager").GetComponent<GameManager>().space_time += Time.deltaTime;
 
-            if (GameObject.Find("GameManager").GetComponent<GameManager>().space_time >= 2f)
+            if (GameObject.Find("GameManager").GetComponent<GameManager>().space_time >= 2.5f)
             {
                 SpaceBar_PopUp.SetActive(false);
                 GameObject.Find("GameManager").GetComponent<GameManager>().spaceON = true;
@@ -138,7 +138,7 @@ public class Button_event : MonoBehaviour
     public void Go_Adventure()
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        Player player = GameObject.Find("Player").GetComponent<Player>();
+        SoundManager soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
         GoADV_BTN.SetActive(false);
         Close_BTN.SetActive(false);
@@ -153,7 +153,7 @@ public class Button_event : MonoBehaviour
         // 모험 실패 0
         if (random_Num == 0)
         {
-            player.PlaySound("FAILURE");
+            soundManager.ExtraSound("FAILURE");
             MainText.text = "모험 실패... 모든 능력 15 감소 ㅜㅁㅜ";
 
             gameManager.charm -= 15;
@@ -166,7 +166,7 @@ public class Button_event : MonoBehaviour
         // 모험 대성공
         else if (random_Num == 9)
         {
-            player.PlaySound("SUCCESS");
+            soundManager.ExtraSound("SUCCESS");
             MainText.text = "모험 대성공! 모든 능력 20 증가!!";
 
             gameManager.charm += 20;
@@ -179,52 +179,52 @@ public class Button_event : MonoBehaviour
         {
             if (random_Num == 1)
             {
-                player.PlaySound("SUCCESS");
+                soundManager.ExtraSound("SUCCESS");
                 MainText.text = "모험 성공! 매력 20 증가!";
                 gameManager.charm += 20;
             }
             else if (random_Num == 2)
             {
-                player.PlaySound("FAILURE");
+                soundManager.ExtraSound("FAILURE");
                 MainText.text = "모험 실패! 매력 15 감소...";
                 gameManager.charm -= 15;
                 gameManager.Stat_MIN();
             }
             else if (random_Num == 3)
             {
-                player.PlaySound("SUCCESS");
+                soundManager.ExtraSound("SUCCESS");
                 MainText.text = "모험 성공! 지능 20 증가!";
                 gameManager.intell += 20;
             }
             else if (random_Num == 4)
             {
-                player.PlaySound("FAILURE");
+                soundManager.ExtraSound("FAILURE");
                 MainText.text = "모험 실패! 지능 15 감소...";
                 gameManager.intell -= 15;
                 gameManager.Stat_MIN();
             }
             else if (random_Num == 5)
             {
-                player.PlaySound("SUCCESS");
+                soundManager.ExtraSound("SUCCESS");
                 MainText.text = "모험 성공! 재력 20 증가!";
                 gameManager.wealth += 20;
             }
             else if (random_Num == 6)
             {
-                player.PlaySound("FAILURE");
+                soundManager.ExtraSound("FAILURE");
                 MainText.text = "모험 실패! 재력 15 감소...";
                 gameManager.wealth -= 15;
                 gameManager.Stat_MIN();
             }
             else if (random_Num == 7)
             {
-                player.PlaySound("SUCCESS");
+                soundManager.ExtraSound("SUCCESS");
                 MainText.text = "모험 성공! 탐구심 20 증가!";
                 gameManager.inqMind += 20;
             }
             else if (random_Num == 8)
             {
-                player.PlaySound("FAILURE");
+                soundManager.ExtraSound("FAILURE");
                 MainText.text = "모험 실패! 탐구심 15 감소...";
                 gameManager.inqMind -= 15;
                 gameManager.Stat_MIN();
@@ -284,7 +284,7 @@ public class Button_event : MonoBehaviour
     public void Go_TRAINING()
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        Player player = GameObject.Find("Player").GetComponent<Player>();
+        SoundManager soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
         GoTRAIN_BTN.SetActive(false);
         Close_BTN.SetActive(false);
@@ -299,7 +299,7 @@ public class Button_event : MonoBehaviour
         // 특훈 실패
         if (random_Num == 0)
         {
-            player.PlaySound("FAILURE");
+            soundManager.ExtraSound("FAILURE");
             MainText.text = "특훈 실패... 모든 능력 25 감소 ㅜㅁㅜ";
 
             gameManager.charm -= 25;
@@ -309,7 +309,7 @@ public class Button_event : MonoBehaviour
         }
         else // 특훈 성공
         {
-            player.PlaySound("SUCCESS");
+            soundManager.ExtraSound("SUCCESS");
             MainText.text = "특훈 성공! 모든 능력 40 증가!";
 
             gameManager.charm += 40;
